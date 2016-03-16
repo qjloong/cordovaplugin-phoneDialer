@@ -6,6 +6,7 @@
   iOS － example
 
   var num = "10010"
-            navigator.PhoneDialer.dial(num,function(err){
+            
+  navigator.PhoneDialer.dial(num,function(err){
                   //errmsg
             });
