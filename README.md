@@ -8,5 +8,7 @@
   var num = "10010"
             
   navigator.PhoneDialer.dial(num,function(err){
+                  
                   //errmsg
+            
             });
