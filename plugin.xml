@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova.plugin.PhoneDialer"
+        version="0.1.0">
+    <name>PhoneDialer</name>
+    <description>Cordova Device Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,dialer</keywords>
+
+    <js-module src="www/dialer.js" name="PhoneDialer">
+        <clobbers target="window.navigator.PhoneDialer"/>
+    </js-module>
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="PhoneDialer">
+                <param name="ios-package" value="PhoneDialer"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/PhoneDialer.h"/>
+        <source-file src="src/ios/PhoneDialer.m"/>
+    </platform>
+</plugin>
